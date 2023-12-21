@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import classes from '../../css/Common.module.css';
+import classes from '../../assests/css/Common.module.css';
 
 const PhotoCard = props => {
 

@@ -1,8 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux'
 import { Link } from "react-router-dom"
-import classes from '../../css/Common.module.css'
-import folderClasses from '../../css/Gallery.module.css'
+import classes from '../../assests/css/Common.module.css'
+import folderClasses from '../../assests/css/Gallery.module.css'
 
 
 const Album = (props) => {

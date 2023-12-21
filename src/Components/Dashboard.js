@@ -2,7 +2,7 @@ import React, { useEffect, useState, Fragment } from 'react'
 import Footer from './Common/Footer'
 import { connect } from 'react-redux'
 import { usersList } from '../Redux/Actions/usersList'
-import classes from '../css/Common.module.css'
+import classes from '../assests/css/Common.module.css'
 import ListAlbum from './Albums/ListAlbum'
 import Loader from '../Components/Common/Loader.js';
 
