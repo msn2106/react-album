@@ -15,14 +15,17 @@ const InitiateApp = (props) => {
   return (
     <BrowserRouter>
       <Provider store={store}>
-        <div className='d-flex'>
-          <div className='d-flex col-md-2'>
-            <Link to='/'>
-              <img className='brand' src={logo} alt='photoGallery logo' width={36} height={36}/>
-            </Link>
-            <h5 color="white">REACT ALBUM</h5>
+        <div className=''>
+          <div style={{display: 'flex'}}>
+            <div style={{width:'120px', marginLeft:'15px'}}>
+              <Link to='/'>
+                <img className='brand' src={logo} alt='photoGallery logo' width='auto' height='auto' />
+              </Link>
+            </div>
+            <div style={{width:'-webkit-fill-available', color:'aliceblue'}}>
+              <h4>REACT PHOTO ALBUM</h4>
+            </div>
           </div>
-          <div className="col-md-10">
             <ul className='topnav'>
               <li>
                 <Link to='/Album'>Albums</Link>
@@ -31,7 +34,6 @@ const InitiateApp = (props) => {
                 <Link to='/Photos'>Photos</Link>
               </li>
             </ul>
-          </div>
         </div>
         <Switch>
           <Route exact path='/' component={Dashboard} />
