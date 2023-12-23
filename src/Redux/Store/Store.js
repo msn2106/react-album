@@ -1,13 +1,13 @@
-import {createStore,applyMiddleware} from 'redux';
-import {composeWithDevTools} from 'redux-devtools-extension';
+import { createStore, applyMiddleware } from 'redux';
+import { composeWithDevTools } from 'redux-devtools-extension';
 import thunk from 'redux-thunk';
-import {rootReducer } from '../Reducers/Reducer'
+import { rootReducer } from '../reducers';
 
 const initializeStore = () => {
   const store = createStore(
     rootReducer, // Initializing root reducer
     //Redux DevTools for debugging application's state changes.
-    //The extension provides power-ups for your Redux development workflow.Apart from Redux, 
+    //The extension provides power-ups for your Redux development workflow.Apart from Redux,
     //it can be used with any other architectures which handle the state.
     composeWithDevTools(applyMiddleware(thunk))
   );
