@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 import { usersList } from '../Redux/Actions/usersList'
 import classes from '../assests/css/Common.module.css'
 import ListAlbum from './Albums/ListAlbum'
-import Loader from '../Components/Common/Loader.js';
+import Loader from './Common/Loader.js';
 
 const Dashboard = props => {
     
