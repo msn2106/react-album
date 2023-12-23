@@ -1,10 +1,10 @@
-import React, { useEffect, useState, Fragment } from 'react';
-import Footer from './Common/Footer';
-import { connect } from 'react-redux';
-import { usersList } from '../redux/actions/usersList';
-import classes from '../assests/css/Common.module.css';
-import ListAlbum from './Albums/ListAlbum';
-import Loader from './Common/Loader.js';
+import React, { useEffect, useState, Fragment } from "react";
+import Footer from "./Common/Footer";
+import { connect } from "react-redux";
+import { usersList } from "../redux/actions/usersList";
+import classes from "../assests/css/Common.module.css";
+import ListAlbum from "./Albums/ListAlbum";
+import Loader from "./Common/Loader.js";
 
 const Dashboard = (props) => {
   const [loader, changeloader] = useState(true);

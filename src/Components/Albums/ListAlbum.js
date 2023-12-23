@@ -1,9 +1,9 @@
-import React, { Fragment } from 'react';
-import { connect } from 'react-redux';
-import { albumsList } from '../../redux/actions/albumsList';
-import Album from './Album';
-import Loader from '../Common/Loader';
-import Pagination from '../Common/Pagination';
+import React, { Fragment } from "react";
+import { connect } from "react-redux";
+import { albumsList } from "../../redux/actions/albumsList";
+import Album from "./Album";
+import Loader from "../Common/Loader";
+import Pagination from "../Common/Pagination";
 
 class ListAlbum extends React.Component {
   constructor(props) {

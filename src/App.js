@@ -1,14 +1,14 @@
-import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
-import { Provider } from 'react-redux';
-import initializeStore from './redux/store/store';
-import { Route, Link, Switch } from 'react-router-dom';
-import Dashboard from './components/Dashboard';
-import Album from './components/Albums/ListAlbum';
-import NotFound from './components/Common/404';
-import ListPhoto from './components/Photos/ListPhoto';
-import Photos from './components/Photos/ListPhoto';
-import logo from './assests/images/photogalleryicon.png';
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import { Provider } from "react-redux";
+import initializeStore from "./redux/store/store";
+import { Route, Link, Switch } from "react-router-dom";
+import Dashboard from "./components/Dashboard";
+import Album from "./components/Albums/ListAlbum";
+import NotFound from "./components/Common/404";
+import ListPhoto from "./components/Photos/ListPhoto";
+import Photos from "./components/Photos/ListPhoto";
+import logo from "./assests/images/photogalleryicon.png";
 
 const InitiateApp = () => {
   const store = initializeStore();
@@ -16,8 +16,8 @@ const InitiateApp = () => {
     <BrowserRouter>
       <Provider store={store}>
         <div className="">
-          <div style={{ display: 'flex' }}>
-            <div style={{ width: '120px', marginLeft: '15px' }}>
+          <div style={{ display: "flex" }}>
+            <div style={{ width: "120px", marginLeft: "15px" }}>
               <Link to="/">
                 <img
                   className="brand"
@@ -28,7 +28,7 @@ const InitiateApp = () => {
                 />
               </Link>
             </div>
-            <div style={{ width: '-webkit-fill-available', color: 'aliceblue' }}>
+            <div style={{ width: "-webkit-fill-available", color: "aliceblue" }}>
               <h4>REACT PHOTO ALBUM</h4>
             </div>
           </div>

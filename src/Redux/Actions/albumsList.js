@@ -1,5 +1,5 @@
-import * as types from '../actiontypes';
-import api from '../../api/api';
+import * as types from "../actiontypes";
+import api from "../../api/api";
 
 export const listAlbums = (albums) => ({
   type: types.VF_NZ_ALBUMS,

@@ -1,11 +1,11 @@
-import axios from 'axios';
+import axios from "axios";
 
 export const GalleryDAO = (url) => {
   return new Promise((resolve, reject) => {
     var params = {};
 
     axios({
-      method: 'GET',
+      method: "GET",
       url,
       //headers: { 'Authorization': 'Basic YXBwbGljYW50Og==' },
       params
@@ -13,7 +13,7 @@ export const GalleryDAO = (url) => {
       if (status === 200) {
         resolve(data);
       } else {
-        reject(new Error('error'));
+        reject(new Error("error"));
       }
     });
   });

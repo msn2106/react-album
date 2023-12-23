@@ -1,10 +1,10 @@
-import React, { Fragment } from 'react';
-import { connect } from 'react-redux';
-import { photosList } from '../../redux/actions/photosList';
-import { albumsList } from '../../redux/actions/albumsList';
-import Loader from '../Common/Loader';
-import Pagination from '../Common//Pagination';
-import PhotoCard from './PhotoCard';
+import React, { Fragment } from "react";
+import { connect } from "react-redux";
+import { photosList } from "../../redux/actions/photosList";
+import { albumsList } from "../../redux/actions/albumsList";
+import Loader from "../Common/Loader";
+import Pagination from "../Common//Pagination";
+import PhotoCard from "./PhotoCard";
 
 class ListPhoto extends React.Component {
   constructor(props) {

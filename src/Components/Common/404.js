@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import notFound from '../../assests/images/notFound.jpg';
+import React from "react";
+import { Link } from "react-router-dom";
+import notFound from "../../assests/images/notFound.jpg";
 
 const NotFound = () => {
   return (
