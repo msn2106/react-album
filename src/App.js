@@ -18,7 +18,7 @@ const InitiateApp = () => {
         <div className="">
           <div style={{ display: "flex" }}>
             <div style={{ width: "120px", marginLeft: "15px" }}>
-              <Link to="/">
+              <Link to="/react-album">
                 <img
                   className="brand"
                   src={logo}
@@ -34,18 +34,18 @@ const InitiateApp = () => {
           </div>
           <ul className="topnav">
             <li>
-              <Link to="/Album">Albums</Link>
+              <Link to="/react-album/Album">Albums</Link>
             </li>
             <li>
-              <Link to="/Photos">Photos</Link>
+              <Link to="/react-album/Photos">Photos</Link>
             </li>
           </ul>
         </div>
         <Switch>
-          <Route exact path="/" component={Dashboard} />
-          <Route exact path="/Album" component={Album} />
-          <Route exact path="/Photos" component={Photos} />
-          <Route path="/photos/:id" component={ListPhoto} />
+          <Route exact path="/react-album" component={Dashboard} />
+          <Route exact path="/react-album/Album" component={Album} />
+          <Route exact path="/react-album/Photos" component={Photos} />
+          <Route path="/react-album/photos/:id" component={ListPhoto} />
           <Route component={NotFound} />
         </Switch>
       </Provider>
