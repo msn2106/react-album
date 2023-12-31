@@ -31,6 +31,8 @@ npm start
 5. Open http://localhost:8080 in your browser</s>
 
 
+#### Video :- https://www.awesomescreenshot.com/video/23675626?key=2298acb62d8ac1f86a5c12f77bd75a79
+
 #### TODO
 1. Add Add Album functionality
 2. Add Delete Album functionality
